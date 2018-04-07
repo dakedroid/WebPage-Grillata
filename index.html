@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html>
+  <title>Grillata Maragon</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <style>
+  body {font-family: "Times New Roman", Georgia, Serif;}
+  h1,h2,h3,h4,h5,h6 {
+      font-family: "Playfair Display";
+      letter-spacing: 5px;
+  }
+
+  .divi{
+    margin:0 auto;
+    width:100%;
+    height:100%;
+  }
+
+
+  .w3-bar-block .w3-bar-item {padding:20px}
+  </style>
+
+  <body>
+
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <div class="w3-bar w3-white w3-padding w3-card-2" style="letter-spacing:4px;">
+        <a href="#home" class="w3-bar-item w3-button">Grillata Malagon</a>
+        <!-- Right-sided navbar links. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+          <a href="#about" class="w3-bar-item w3-button">Acerca de</a>
+          <a href="#restaurant" class="w3-bar-item w3-button">Restaurant</a>
+          <a href="#eventos" class="w3-bar-item w3-button">Eventos</a>
+          <a href="#contact" class="w3-bar-item w3-button">Contacto</a>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- Header -->
+    <header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:200px" id="home">
+      <img class="w3-image" src="images/port.jpg" alt="Hamburger Catering" width="1600" height="800">
+      <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+      </div>
+    </header>
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width:1100px">
+
+        <hr>
+          <!-- About Section -->
+        <div class="w3-row w3-padding-64 w3-card-2 w3-container  " id="about">
+
+            <div class="w3-col m6 w3-padding-large w3-hide-small ">
+                <img src="images/grillata.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+            </div>
+            <div class="w3-col m6 w3-padding-large w3-card-2 w3-container ">
+              <h1 class="w3-center">Grillata Malagon</h1><br>
+              <h5 class="w3-center">Ofreciendo los mejores Buffets y eventos desde 1994 </h5>
+              <p class="w3-large">
+                Grillata Malagon fue fundada por Nicolás Malagón Tronco en la ciudad de Tuxtepec,
+                Oax. Comenzo con ímpetu de poder lograr que cualquier evento social como bodas, XV años, Bautizos,
+                Comuniones y cualquier Festejo Familiar, al igual que
+                eventos empresariales, Opening, pudiesen disponer de la mejor comida, ofreciendo Buffetes con un sabor inigualable, comida Regional e internacional  y
+                decoraciones tematicas creativas. Tambien dispone con servicio de alquiler de manteleria, cristaleria, losa y todo lo necesario para que cualquier evento logre ser increible
+                como ningun otro. El dia de hoy Nicolás Malagón cuenta con el mejor servicio en toda la
+                cuenca de Papaloapan y toda la region. han sido los primeros en incluir el servicio All inclusives</p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <!-- Restaurant Section --> <!-- Menu Section -->
+        <div class="w3-row w3-padding-16 w3-card-2 w3-container " id="menu">
+
+            <h1 class="w3-center w3-padding" id="restaurant">Restaurant</h1>
+                    <!-- Menu Container -->
+                <div class="w3-container" id="menu">
+                    <div class="w3-content w3-center" style="max-width:1000px;">
+
+                            <br>
+
+                            <div class="w3-row w3-center w3-card-2 w3-padding">
+
+                                <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+                                    <div class="w3-col s6 tablink">Comida</div>
+                                </a>
+
+                                <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+                                    <div class="w3-col s6 tablink">Bebidas</div>
+                                </a>
+
+                            </div>
+
+                            <div class="w3-row-padding menu w3-padding-16 w3-center w3-card-2" id="Eat" href="javascript:void(0)">
+
+                              <!-- First Food Page -->
+                              <div id="img-food-p1">
+
+                                  <div class="w3-half w3-container w3-padding">
+                                    <img src="images/barbacoa.jpg" class="w3-round w3-image" alt="Menu" width="500" height="600">
+                                    <h5>Barbacoa $60</h5>
+                                    <p class="w3-text-grey">Incluye Guarnicion (frijoles)</p><br>
+                                  </div>
+
+                                  <div class="w3-half w3-container w3-padding">
+                                    <img src="images/paella.jpg" class=" w3-round w3-image" alt="Menu" width="500" height="500">
+                                    <h5>Orden de Paella $150</h5>
+                                    <p class="w3-text-grey">Contiene carne de cerdo, pollo, mariscos</p><br>
+                                  </div>
+
+                                  <div class="w3-half w3-container w3-padding">
+                                    <img src="images/chile-relleno.jpg" class=" w3-round w3-image" alt="Menu" width="500" height="500">
+                                    <h5>Orden Chiles Rellenos en Frios $35</h5>
+                                    <p class="w3-text-grey">Incluye Arroz o Frijoles</p><br>
+                                  </div>
+
+                                  <div class="w3-half w3-container w3-padding">
+                                    <img src="images/chile-nogada.jpg" class=" w3-round w3-image" alt="Menu" width="500" height="500">
+                                    <h5>Chile en Nogada $150</h5>
+                                    <p class="w3-text-grey">Recete Orginial Poblana bañada con nuez de Castilla</p><br>
+                                  </div>
+
+                                  <div class="w3-half w3-container w3-padding">
+                                    <img src="images/p3/lomo.jpg" class="w3-round w3-image" alt="Menu" width="500" height="600">
+                                    <h5>Lomo de Cerdo Horneado $75</h5>
+                                    <p class="w3-text-grey">Incluye Ensalada y fusiles</p><br>
+                                  </div>
+
+                                  <div class="w3-half w3-container w3-padding">
+                                    <img src="images/p4/tostadas.jpg" class=" w3-round w3-image" alt="Menu" width="500" height="500">
+                                    <h5>Picaditas $10 (P/U)</h5>
+                                    <p class="w3-text-grey">descripcion</p><br>
+                                  </div>
+
+                              </div>
+
+                              <!-- Second Food Page -->
+                              <div id="img-food-p2" style="display:none;">
+
+                                  <div class="w3-half w3-container w3-padding">
+                                    <img src="images/platanitos.jpg" class="w3-round w3-image" alt="Menu" width="500" height="600">
+                                    <h5>Orden de Platanitos Fritos $30</h5>
+                                    <p class="w3-text-grey">Preparados con crema y queso</p><br>
+                                  </div>
+
+                                  <div class="w3-half w3-container w3-padding">
+                                    <img src="images/p4/pastel-coco.jpg" class=" w3-round w3-image" alt="Menu" width="500" height="500">
+                                    <h5>Pastel de coco $150</h5>
+                                    <p class="w3-text-grey">Pastel de coco natural 1/4 kg.</p><br>
+                                  </div>
+
+
+                                  <div class="w3-half w3-container w3-padding">
+                                      <img src="images/p4/pollo.jpg" class=" w3-round w3-image" alt="Menu" width="500" height="500">
+                                      <h5>Milanesa $90</h5>
+                                      <p class="w3-text-grey">Clasia Milanessa de Res</p><br>
+                                 </div>
+                                  <div class="w3-half w3-container w3-padding">
+                                    <img src="images/p4/spaggeti.jpg" class=" w3-round w3-image" alt="Menu" width="500" height="500">
+                                    <h5>Spaguetti a la Bolognesa $90</h5>
+                                    <p class="w3-text-grey">Rico spaguetti con sabor inigualable</p><br>
+                                  </div>
+
+                                  <div class="w3-half w3-container w3-padding">
+                                    <img src="images/tacos-dorados.jpg" class=" w3-round w3-image" alt="Menu" width="500" height="500">
+                                    <h5>Orden de Tacos Dorados $60</h5>
+                                    <p class="w3-text-grey">Preparados con Queso y Crema</p><br>
+                                  </div>
+
+
+                                  <div class="w3-half w3-container w3-padding">
+                                    <img src="images/tarta-carnemolida.jpg" class=" w3-round w3-image" alt="Menu" width="500" height="500">
+                                    <h5>Tarta de Buffet Dominical</h5>
+                                    <p class="w3-text-grey">Solo disponible los domingos de Buffet</p><br>
+                                  </div>
+
+                              </div>
+
+                              <!-- Third Food Page -->
+                              <div id="img-food-p3" style="display:none;">
+
+
+
+                                  <div class="w3-half w3-container w3-padding">
+                                    <img src="images/p3/ensalada-chile.jpg" class=" w3-round w3-image" alt="Menu" width="500" height="500">
+                                    <h5>Ensalada de verduras crudas y cocidas $PENDIENTE</h5>
+                                    <p class="w3-text-grey">Incluye verduras mixtas</p><br>
+                                  </div>
+
+                                  <div class="w3-half w3-container w3-padding">
+                                    <img src="images/p3/rueditas-mermelada.jpg" class=" w3-round w3-image" alt="Menu" width="500" height="500">
+                                    <h5>titulo $precio</h5>
+                                    <p class="w3-text-grey">descripcion</p><br>
+                                  </div>
+
+                                  <div class="w3-half w3-container w3-padding">
+                                    <img src="images/p3/cocada.jpg" class=" w3-round w3-image" alt="Menu" width="500" height="500">
+                                    <h5>titulo $precio</h5>
+                                    <p class="w3-text-grey">descripcion</p><br>
+                                  </div>
+
+                                  <div class="w3-half w3-container  w3-padding">
+                                    <img src="images/p3/panque.jpg" class=" w3-round w3-image" alt="Menu" width="500" height="500">
+                                    <h5>Panque $PENDIENTE</h5>
+                                    <p class="w3-text-grey">PENDIENTE</p><br>
+                                  </div>
+
+                                  <div class="w3-half w3-container w3-padding">
+                                    <img src="images/p3/pastel-cafe.jpg" class=" w3-round w3-image" alt="Menu" width="500" height="500">
+                                    <h5>Pastel $PENDIENTE</h5>
+                                    <p class="w3-text-grey">PENDIENTE</p><br>
+                                  </div>
+
+                              </div>
+
+                              <!-- Four Food Page -->
+                              <div id="img-food-p4" style="display:none;">
+
+                                  <div class="w3-half w3-container w3-padding">
+                                    <img src="images/p4/palitos.jpeg" class="w3-round w3-image" alt="Menu" width="500" height="500">
+                                    <h5> $PENDIENTE</h5>
+                                    <p class="w3-text-grey">PENDIENTE</p><br>
+                                  </div>
+
+
+
+
+
+                                  <div class="w3-half w3-container  w3-padding">
+                                    <img src="images/p4/bocadillo.jpeg" class=" w3-round w3-image" alt="Menu" width="500" height="500">
+                                    <h5>PENDIENTE $precio</h5>
+                                    <p class="w3-text-grey">PENDIENTE</p><br>
+                                  </div>
+
+
+                              </div>
+
+                              <div class="w3-center w3-padding-32">
+                                    <div class="w3-bar">
+                                      <a id="op-imgs-foods-back" href="#Eat" class="w3-bar-item w3-button w3-hover-black" >«</a>
+                                      <a id="op-imgs-foods-1" href="#Eat" class="w3-bar-item w3-black w3-button" onclick="showImages1()">1</a>
+                                      <a id="op-imgs-foods-2" href="#Eat" class="w3-bar-item w3-button w3-hover-black" onclick="showImages2()">2</a>
+                                      <a id="op-imgs-foods-next" href="#Eat" class="w3-bar-item w3-button w3-hover-black">»</a>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div id="Drinks" class="w3-row-padding menu w3-padding-16 w3-center w3-card-2">
+
+                                  <!-- First Food Page -->
+                                  <div id="img-extras-p1">
+
+                                      <div class="w3-container w3-padding w3-container">
+                                        <img src="images/bebidas/conga.jpg" class="w3-round w3-image" alt="Menu" width="500" height="500">
+                                        <h4>Conga</h4>
+                                      </div>
+
+                                      <div class="w3-container w3-padding">
+                                        <img src="images/bebidas/pinacolada.jpg" class=" w3-round w3-image" alt="Menu" width="500" height="500">
+                                        <h4>Piña Colada</h4>
+                                      </div>
+
+                                      <div class="w3-container w3-padding">
+                                        <img src="images/bebidas/sangria.jpg" class=" w3-round w3-image" alt="Menu" width="500" height="500">
+                                        <h4>Sangria Preparada</h4>
+                                      </div>
+
+                                      <div class="w3-container w3-padding">
+                                        <img src="images/bebidas/vampiro.jpeg" class="w3-round w3-image" alt="Menu" width="500" height="500">
+                                        <h4>Vampiro</h4>
+                                      </div>
+
+                                      <div class="w3-container w3-padding">
+                                        <img src="images/bebidas/tom-collins.jpg" class=" w3-round w3-image" alt="Menu" width="500" height="500">
+                                        <h4>Tom Collins</h4>
+                                      </div>
+
+                                      <div class="w3-container w3-padding">
+                                        <img src="images/bebidas/cerveza.jpg" class="w3-round w3-image" alt="Menu" width="500" height="500">
+                                        <h4>Cerveza</h4>
+                                      </div>
+
+                                  </div>
+                            </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <h2 class="w3-center w3-padding" id="especialidades">Especiales</h2>
+
+                <p class="w3-padding"></p>
+
+                <div class="w3-center w3-card-2 w3-container ">
+                    <hr>
+                    <img id="img-especiales-1" src="images/especiales/buffet.jpg" class="  w3-image " alt="Menu" width="500" height="600">
+                    <h4 id="text-1">Buffet Dominical Con diferentes tipos de platillos y acompañamientos</h4>
+                    <img id="img-especiales-2" style="display:none;" src="images/especiales/crepas.gif" class=" w3-round w3-image" alt="Menu" width="500" height="600">
+                    <img id="img-especiales-3" style="display:none;" src="images/especiales/medallon.jpg" class=" w3-round w3-image" alt="Menu" width="500" height="600">
+                    <h4 id="text-3" style="display:none;"> Jueves de Carne, Incluye Cortes Americanos, Medallones de Filete, Sabanas, Chuleta</h4>
+                    <img id="img-especiales-4" style="display:none;" src="images/especiales/paella.jpg" class=" w3-round w3-image" alt="Menu" width="500" height="600">
+                    <!-- Pagination -->
+                    <div class="w3-center w3-padding-32">
+                      <div class="w3-bar">
+                        <a id="promoback" href="#especialidades" class="w3-bar-item w3-button w3-hover-black" >«</a>
+                        <a id="promo1" href="#especialidades" class="w3-bar-item w3-black w3-button" onclick="onPromo1()">1</a>
+                        <a id="promo2" href="#especialidades" class="w3-bar-item w3-button w3-hover-black" onclick="onPromo2()">2</a>
+                        <a id="promo3" href="#especialidades" class="w3-bar-item w3-button w3-hover-black" onclick="onPromo3()">3</a>
+                        <a id="promo4" href="#especialidades" class="w3-bar-item w3-button w3-hover-black" onclick="onPromo4()">4</a>
+                        <a id="promonext" href="#especialidades" class="w3-bar-item w3-button w3-hover-black">»</a>
+                      </div>
+                    </div>
+                </div>
+                <hr>
+
+        </div>
+
+        <hr>
+
+        <!-- Eventos Section -->
+        <div class="w3-container w3-padding w3-card-2" id="eventos">
+
+
+
+                <h1 class="w3-center w3-padding">Eventos</h1>
+
+                <h5 class="w3-center">Ofreciendo Todo tipo de decoracion para que los eventos sean increibles, tambien hacemos alquiler de alguno de los elementos a continuacion</h5>
+
+                <hr>
+
+                <!-- 1 Photo Grid -->
+                <div class=" w3-row-padding  w3-center " id="food1">
+
+                  <!-- First Photo Grid-->
+                  <div class="w3-row-padding w3-padding-16">
+                    <div class="w3-quarter">
+                      <img src="images/eventos/tematica1.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                    </div>
+                    <div class="w3-quarter">
+                      <img src="images/eventos/tematica2.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                    </div>
+                    <div class="w3-quarter">
+                      <img src="images/eventos/tematica3.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                    </div>
+                    <div class="w3-quarter">
+                      <img src="images/eventos/tematica4n.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                    </div>
+                  </div>
+
+
+                  <!-- First Second part Photo Grid-->
+                  <div class="w3-row-padding w3-padding-16">
+                    <div class="w3-quarter">
+                      <img src="images/eventos/tematica5.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                    </div>
+                    <div class="w3-quarter">
+                      <img src="images/eventos/tematica6.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                    </div>
+                    <div class="w3-quarter">
+                      <img src="images/eventos/tematica7.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                    </div>
+                    <div class="w3-quarter">
+                      <img src="images/eventos/tematica8.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                    </div>
+                  </div>
+
+                  <!-- First Third Part Photo Grid-->
+                  <div class="w3-row-padding w3-padding-16">
+
+                    <div class="w3-quarter">
+                      <img src="images/eventos/tematica10.jpg" alt="Steak" style="width:250px;height:300px;">
+                    </div>
+                    <div class="w3-quarter">
+                      <img src="images/eventos/tematica11.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                    </div>
+                    <div class="w3-quarter">
+                      <img src="images/eventos/tematica12.jpg" alt="Steak" style="width:250px;height:300px;">
+                    </div>
+                    <div class="w3-quarter">
+                      <img src="images/eventos/tematica50.jpg" alt="Steak" style="width:250px;height:300px;">
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- 2 Photo Grid-->
+                <div class=" w3-row-padding  w3-center" id="food2" style="display:none;">
+
+                    <!-- First Photo Grid-->
+                    <div class="w3-row-padding w3-padding-16">
+                      <div class="w3-quarter">
+                        <img src="images/eventos/tematica13.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                      </div>
+                      <div class="w3-quarter">
+                        <img src="images/eventos/tematica14.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                      </div>
+                      <div class="w3-quarter">
+                        <img src="images/eventos/tematica15.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                      </div>
+                      <div class="w3-quarter">
+                        <img src="images/eventos/tematica16.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                      </div>
+                    </div>
+
+
+                    <!-- First Second part Photo Grid-->
+                    <div class="w3-row-padding w3-padding-16">
+                      <div class="w3-quarter">
+                        <img src="images/eventos/tematica17.jpg" alt="Steak" style="width:250px;height:300px;">
+                        <h3>Estilo X</h3>
+                        <p>Descripcion.</p>
+                      </div>
+                      <div class="w3-quarter">
+                        <img src="images/eventos/tematica18.jpg" alt="Steak" style="width:250px;height:300px;">
+                        <h3>Estilo X</h3>
+                        <p>Descripcion.</p>
+                      </div>
+                      <div class="w3-quarter">
+                        <img src="images/eventos/tematica19.jpg" alt="Steak" style="width:250px;height:300px;">
+                        <h3>Estilo X</h3>
+                        <p>Descripcion.</p>
+                      </div>
+                      <div class="w3-quarter">
+                        <img src="images/eventos/tematica20.jpg" alt="Steak" style="width:250px;height:300px;">
+                        <h3>Estilo X</h3>
+                        <p>Descripcion.</p>
+                      </div>
+                    </div>
+
+                    <!-- First Third Part Photo Grid-->
+                    <div class="w3-row-padding w3-padding-16">
+                      <div class="w3-quarter">
+                        <img src="images/eventos/tematica21.jpg" alt="Steak" style="width:250px;height:300px;">
+                        <h3>Estilo X</h3>
+                        <p>Descripcion.</p>
+                      </div>
+                      <div class="w3-quarter">
+                        <img src="images/eventos/tematica22.jpg" alt="Steak" style="width:250px;height:300px;">
+                        <h3>Estilo X</h3>
+                        <p>Descripcion.</p>
+                      </div>
+                      <div class="w3-quarter">
+                        <img src="images/eventos/tematica23.jpg" alt="Steak" style="width:250px;height:300px;">
+                        <h3>Estilo X</h3>
+                        <p>Descripcion.</p>
+                      </div>
+                      <div class="w3-quarter">
+                        <img src="images/eventos/tematica24.jpg" alt="Steak" style="width:250px;height:300px;">
+                        <h3>Estilo X</h3>
+                        <p>Descripcion.</p>
+                      </div>
+                    </div>
+
+                </div>
+
+                <!-- 3 Photo Grid-->
+                <div class=" w3-row-padding  w3-center " id="food3" style="display:none;">
+
+                    <!-- First Photo Grid-->
+                    <div class="w3-row-padding w3-padding-16">
+                          <div class="w3-quarter">
+                            <img src="images/eventos/tematica25.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                          </div>
+                          <div class="w3-quarter">
+                            <img src="images/eventos/tematica26.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                          </div>
+                          <div class="w3-quarter">
+                            <img src="images/eventos/tematica27.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                          </div>
+                          <div class="w3-quarter">
+                            <img src="images/eventos/tematica28.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                          </div>
+                    </div>
+
+                    <!-- First Second part Photo Grid-->
+                    <div class="w3-row-padding w3-padding-16">
+                          <div class="w3-quarter">
+                            <img src="images/eventos/tematica29n.jpg" alt="Steak" style="width:250px;height:300px;">
+                            <h3>Estilo X</h3>
+                            <p>Descripcion.</p>
+                          </div>
+                          <div class="w3-quarter">
+                            <img src="images/eventos/tematica30.jpg" alt="Steak" style="width:250px;height:300px;">
+                            <h3>Estilo X</h3>
+                            <p>Descripcion.</p>
+                          </div>
+                          <div class="w3-quarter">
+                            <img src="images/eventos/tematica31.jpg" alt="Steak" style="width:250px;height:300px;">
+                            <h3>Estilo X</h3>
+                            <p>Descripcion.</p>
+                          </div>
+                          <div class="w3-quarter">
+                            <img src="images/eventos/tematica32.jpg" alt="Steak" style="width:250px;height:300px;">
+                            <h3>Estilo X</h3>
+                            <p>Descripcion.</p>
+                          </div>
+                    </div>
+
+                    <!-- First Third Part Photo Grid-->
+                    <div class="w3-row-padding w3-padding-16">
+                          <div class="w3-quarter">
+                            <img src="images/eventos/tematica33.jpg" alt="Steak" style="width:250px;height:300px;">
+                            <h3>Estilo X</h3>
+                            <p>Descripcion.</p>
+                          </div>
+                          <div class="w3-quarter">
+                            <img src="images/eventos/tematica34.jpg" alt="Steak" style="width:250px;height:300px;">
+                            <h3>Estilo X</h3>
+                            <p>Descripcion.</p>
+                          </div>
+                          <div class="w3-quarter">
+                            <img src="images/eventos/tematica35.jpg" alt="Steak" style="width:250px;height:300px;">
+                            <h3>Estilo X</h3>
+                            <p>Descripcion.</p>
+                          </div>
+                          <div class="w3-quarter">
+                            <img src="images/eventos/tematica36.jpg" alt="Steak" style="width:250px;height:300px;">
+                            <h3>Estilo X</h3>
+                            <p>Descripcion.</p>
+                          </div>
+                    </div>
+
+                </div>
+
+                <!-- 4 Photo Grid-->
+                <div class=" w3-row-padding  w3-center " id="food4" style="display:none;">
+
+                    <!-- First Photo Grid-->
+                    <div class="w3-row-padding w3-padding-16">
+                        <div class="w3-quarter">
+                          <img src="images/eventos/tematica37.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                        </div>
+                        <div class="w3-quarter">
+                          <img src="images/eventos/tematica38.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                        </div>
+                        <div class="w3-quarter">
+                          <img src="images/eventos/tematica39.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                        </div>
+                        <div class="w3-quarter">
+                          <img src="images/eventos/tematica40.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                        </div>
+                    </div>
+
+
+                    <!-- First Second part Photo Grid-->
+                    <div class="w3-row-padding w3-padding-16">
+                      <div class="w3-quarter">
+                        <img src="images/eventos/tematica51.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                      </div>
+
+                        <div class="w3-quarter">
+                          <img src="images/eventos/tematica42.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                        </div>
+                        <div class="w3-quarter">
+                          <img src="images/eventos/tematica43.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                        </div>
+                        <div class="w3-quarter">
+                          <img src="images/eventos/tematica45.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                        </div>
+                    </div>
+
+                    <!-- First Third Part Photo Grid-->
+                    <div class="w3-row-padding w3-padding-16">
+                        <div class="w3-quarter">
+                          <img src="images/eventos/tematica46.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                        </div>
+                        <div class="w3-quarter">
+                          <img src="images/eventos/tematica47.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                        </div>
+                        <div class="w3-quarter">
+                          <img src="images/eventos/tematica48.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                        </div>
+                        <div class="w3-quarter">
+                          <img src="images/eventos/tematica49.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- 5 Photo grid -->
+                <div class=" w3-row-padding  w3-center " id="food5" style="display:none;">
+
+                    <!-- First Photo Grid-->
+                    <div class="w3-row-padding w3-padding-16">
+
+                      <div class="w3-quarter">
+                        <img src="images/eventos/tematica54.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                      </div>
+                        <div class="w3-quarter">
+                          <img src="images/eventos/tematica52.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                        </div>
+                        <div class="w3-quarter">
+                          <img src="images/eventos/tematica53.jpg" alt="Steak" style="width:250px;height:300px;">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="w3-center w3-padding-32">
+                    <div class="w3-bar">
+                        <a id="opback" href="#" class="w3-bar-item w3-button w3-hover-black" >«</a>
+                        <a id="op1" href="#food1" class="w3-bar-item w3-black w3-button" onclick="showDiv1()">1</a>
+                        <a id="op2" href="#food2" class="w3-bar-item w3-button w3-hover-black" onclick="showDiv2()">2</a>
+                        <a id="op3" href="#food3" class="w3-bar-item w3-button w3-hover-black" onclick="showDiv3()">3</a>
+                        <a id="op4" href="#food4" class="w3-bar-item w3-button w3-hover-black" onclick="showDiv4()">4</a>
+                        <a id="op5" href="#food5" class="w3-bar-item w3-button w3-hover-black" onclick="showDiv5()">5</a>
+                        <a id="opnext" href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+                    </div>
+                </div>
+        </div>
+
+        <hr>
+
+        <!-- Contact Section -->
+        <div class="w3-container w3-padding-64" id="contact">
+
+
+            <!-- Horarios -->
+            <div class="w3-card-2 w3-container">
+                  <h1>Horarios</h1><br>
+                      <h4 class="w3-text-blue-grey w3-large">Ofrecemos servicio de lunes a sabado a partir de 8 Am a 10 PM  y los domingos de 10 AM a 8 PM</h4>
+                </div>
+
+            <br>
+
+            <!-- Como llegar -->
+            <div class="w3-card-2 w3-container">
+                  <h1>Como llegar</h1>
+                  <h4 class="w3-text-blue-grey w3-large"><b>Calle 5 de Mayo #425 Tuxtepec, Oax</b></h4>
+                  <hr>
+                  <iframe width="100%" height="400px"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d237.04886374965403!2d-96.11998888534958!3d18.081652360863227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9bc911020033c8a6!2sRestaurante+Grillata!5e0!3m2!1ses-419!2smx!4v1502482670282" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  <hr>
+            </div>
+
+            <br>
+
+            <!-- Contacto -->
+            <div class="w3-card-2 w3-container">
+                  <h1>Contacto</h1>
+                  <h5>Puedes comunicarte con nosotros por: </h5>
+                  <ul>
+                      <li>
+                          <h4 class="w3-text-blue-grey w3-large"> Telefono al (287) 87-544-45</h4>
+                      </li>
+                      <li>
+                          <h4 class="w3-text-blue-grey w3-large">banquetesmalagon@hotmail.com</h4>
+                      </li>
+                      <li>
+                          <h4 class="w3-text-blue-grey w3-large">Pagina de facebook <a href="https://www.facebook.com/GRILLATA/">Grillata Malagon</a></h4>
+                      </li>
+                      <li>
+                          <h4 class="w3-text-blue-grey w3-large">Puedes contactar el servicio a domiclio "FLASH" al numero 2871108468 para que lleven la comida hasta tu casa</a></h4>
+                      </li>
+                  </ul>
+            </div>
+
+            <!--
+                <form action="/action_page.php" target="_blank">
+                  <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+                  <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
+                  <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+                  <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+                  <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+                </form>
+
+              -->
+        </div>
+
+        <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-32"></footer>
+    <script>
+      // Tabbed Menu
+      function openMenu(evt, menuName) {
+        var i, x, tablinks;
+        x = document.getElementsByClassName("menu");
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < x.length; i++) {
+           tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+        }
+        document.getElementById(menuName).style.display = "block";
+        evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+      }
+
+      document.getElementById("myLink").click();
+
+      function showImages1(){
+        document.getElementById("op-imgs-foods-1").classList.remove('w3-hover-black');
+        document.getElementById("op-imgs-foods-1").classList.add('w3-black');
+
+        document.getElementById("op-imgs-foods-2").classList.remove('w3-black');
+        document.getElementById("op-imgs-foods-2").classList.add('w3-hover-black');
+
+        document.getElementById("img-food-p1").style.display = "block";
+        document.getElementById("img-food-p2").style.display = "none";
+
+      }
+
+      function showImages2(){
+
+        document.getElementById("op-imgs-foods-1").classList.remove('w3-black');
+        document.getElementById("op-imgs-foods-1").classList.add('w3-hover-black');
+
+        document.getElementById("op-imgs-foods-2").classList.remove('w3-hover-black');
+        document.getElementById("op-imgs-foods-2").classList.add('w3-black');
+
+
+        document.getElementById("img-food-p1").style.display = "none";
+        document.getElementById("img-food-p2").style.display = "block";
+
+      }
+
+      function showDiv1() {
+
+        document.getElementById("op1").classList.remove('w3-hover-black');
+        document.getElementById("op1").classList.add('w3-black');
+
+
+        document.getElementById("op2").classList.remove('w3-black');
+        document.getElementById("op2").classList.add('w3-hover-black');
+
+
+        document.getElementById("op3").classList.remove('w3-black');
+        document.getElementById("op3").classList.add('w3-hover-black');
+
+
+        document.getElementById("op4").classList.remove('w3-black');
+        document.getElementById("op4").classList.add('w3-hover-black');
+
+        document.getElementById("op5").classList.remove('w3-black');
+        document.getElementById("op5").classList.add('w3-hover-black');
+
+         document.getElementById("food1").style.display = "block";
+         document.getElementById("food2").style.display = "none";
+         document.getElementById("food3").style.display = "none";
+         document.getElementById("food4").style.display = "none";
+         document.getElementById("food5").style.display = "none";
+      }
+
+      function showDiv2() {
+        document.getElementById("op1").classList.remove('w3-black');
+        document.getElementById("op1").classList.add('w3-hover-black');
+
+        document.getElementById("op2").classList.remove('w3-hover-black');
+        document.getElementById("op2").classList.add('w3-black');
+
+        document.getElementById("op3").classList.remove('w3-black');
+        document.getElementById("op3").classList.add('w3-hover-black');
+
+        document.getElementById("op4").classList.remove('w3-black');
+        document.getElementById("op4").classList.add('w3-hover-black');
+
+        document.getElementById("op5").classList.remove('w3-black');
+        document.getElementById("op5").classList.add('w3-hover-black');
+
+        document.getElementById("food1").style.display = "none";
+        document.getElementById("food2").style.display = "block";
+        document.getElementById("food3").style.display = "none";
+        document.getElementById("food4").style.display = "none";
+        document.getElementById("food5").style.display = "none";
+
+      }
+
+      function showDiv3() {
+          document.getElementById("op1").classList.remove('w3-black');
+        document.getElementById("op1").classList.add('w3-hover-black');
+
+        document.getElementById("op2").classList.remove('w3-black');
+        document.getElementById("op2").classList.add('w3-hover-black');
+
+
+        document.getElementById("op3").classList.remove('w3-hover-black');
+        document.getElementById("op3").classList.add('w3-black');
+
+        document.getElementById("op4").classList.remove('w3-black');
+        document.getElementById("op4").classList.add('w3-hover-black');
+
+        document.getElementById("op5").classList.remove('w3-black');
+        document.getElementById("op5").classList.add('w3-hover-black');
+
+
+        document.getElementById("food1").style.display = "none";
+        document.getElementById("food2").style.display = "none";
+        document.getElementById("food3").style.display = "block";
+        document.getElementById("food4").style.display = "none";
+        document.getElementById("food5").style.display = "none";
+      }
+
+      function showDiv4() {
+
+        document.getElementById("op1").classList.remove('w3-black');
+        document.getElementById("op1").classList.add('w3-hover-black');
+
+
+        document.getElementById("op2").classList.remove('w3-black');
+        document.getElementById("op2").classList.add('w3-hover-black');
+
+
+        document.getElementById("op3").classList.remove('w3-black');
+        document.getElementById("op3").classList.add('w3-hover-black');
+
+
+        document.getElementById("op4").classList.remove('w3-hover-black');
+        document.getElementById("op4").classList.add('w3-black');
+
+        document.getElementById("op5").classList.remove('w3-black');
+        document.getElementById("op5").classList.add('w3-hover-black');
+
+        document.getElementById("food1").style.display = "none";
+        document.getElementById("food2").style.display = "none";
+        document.getElementById("food3").style.display = "none";
+        document.getElementById("food4").style.display = "block";
+        document.getElementById("food5").style.display = "none";
+      }
+
+      function showDiv5() {
+
+        document.getElementById("op1").classList.remove('w3-black');
+        document.getElementById("op1").classList.add('w3-hover-black');
+
+
+        document.getElementById("op2").classList.remove('w3-black');
+        document.getElementById("op2").classList.add('w3-hover-black');
+
+
+        document.getElementById("op3").classList.remove('w3-black');
+        document.getElementById("op3").classList.add('w3-hover-black');
+
+        document.getElementById("op4").classList.remove('w3-black');
+        document.getElementById("op4").classList.add('w3-hover-black');
+
+        document.getElementById("op5").classList.remove('w3-hover-black');
+        document.getElementById("op5").classList.add('w3-black');
+
+        document.getElementById("food1").style.display = "none";
+        document.getElementById("food2").style.display = "none";
+        document.getElementById("food3").style.display = "none";
+        document.getElementById("food4").style.display = "none";
+        document.getElementById("food5").style.display = "block";
+      }
+
+      function onPromo1() {
+        document.getElementById("promo1").classList.remove('w3-hover-black');
+        document.getElementById("promo1").classList.add('w3-black');
+
+        document.getElementById("promo2").classList.remove('w3-black');
+        document.getElementById("promo2").classList.add('w3-hover-black');
+
+        document.getElementById("promo3").classList.remove('w3-black');
+        document.getElementById("promo3").classList.add('w3-hover-black');
+
+        document.getElementById("promo4").classList.remove('w3-black');
+        document.getElementById("promo4").classList.add('w3-hover-black');
+
+        document.getElementById("img-especiales-1").style.display = "block";
+        document.getElementById("img-especiales-1").style = "w3-center";
+        document.getElementById("text-1").style.display = "block";
+
+        document.getElementById("img-especiales-2").style.display = "none";
+        document.getElementById("img-especiales-3").style.display = "none";
+        document.getElementById("text-3").style.display = "none";
+        document.getElementById("img-especiales-4").style.display = "none";
+      }
+
+      function onPromo2() {
+
+        document.getElementById("promo1").classList.remove('w3-black');
+        document.getElementById("promo1").classList.add('w3-hover-black');
+
+        document.getElementById("promo2").classList.remove('w3-hover-black');
+        document.getElementById("promo2").classList.add('w3-black');
+
+        document.getElementById("promo3").classList.remove('w3-black');
+        document.getElementById("promo3").classList.add('w3-hover-black');
+
+        document.getElementById("promo4").classList.remove('w3-black');
+        document.getElementById("promo4").classList.add('w3-hover-black');
+
+        document.getElementById("img-especiales-1").style.display = "none";
+        document.getElementById("text-1").style.display = "none";
+        document.getElementById("img-especiales-2").style.display = "block";
+        document.getElementById("img-especiales-2").style = "w3-center";
+        document.getElementById("img-especiales-3").style.display = "none";
+        document.getElementById("text-3").style.display = "none";
+        document.getElementById("img-especiales-4").style.display = "none";
+      }
+
+      function onPromo3() {
+        document.getElementById("promo1").classList.remove('w3-black');
+        document.getElementById("promo1").classList.add('w3-hover-black');
+
+        document.getElementById("promo2").classList.remove('w3-black');
+        document.getElementById("promo2").classList.add('w3-hover-black');
+
+        document.getElementById("promo3").classList.remove('w3-hover-black');
+        document.getElementById("promo3").classList.add('w3-black');
+
+        document.getElementById("promo4").classList.remove('w3-black');
+        document.getElementById("promo4").classList.add('w3-hover-black');
+
+        document.getElementById("img-especiales-1").style.display = "none";
+        document.getElementById("text-1").style.display = "none";
+        document.getElementById("img-especiales-2").style.display = "none";
+        document.getElementById("img-especiales-3").style.display = "block";
+        document.getElementById("img-especiales-3").style = "w3-center";
+          document.getElementById("text-3").style.display = "block";
+        document.getElementById("img-especiales-4").style.display = "none";
+      }
+
+      function onPromo4() {
+        document.getElementById("promo1").classList.remove('w3-black');
+        document.getElementById("promo1").classList.add('w3-hover-black');
+
+        document.getElementById("promo2").classList.remove('w3-black');
+        document.getElementById("promo2").classList.add('w3-hover-black');
+
+        document.getElementById("promo3").classList.remove('w3-black');
+        document.getElementById("promo3").classList.add('w3-hover-black');
+
+        document.getElementById("promo4").classList.remove('w3-hover-black');
+        document.getElementById("promo4").classList.add('w3-black');
+
+        document.getElementById("img-especiales-1").style.display = "none";
+        document.getElementById("text-1").style.display = "none";
+        document.getElementById("img-especiales-2").style.display = "none";
+        document.getElementById("img-especiales-3").style.display = "none";
+        document.getElementById("text-3").style.display = "none";
+        document.getElementById("img-especiales-4").style.display = "block";
+        document.getElementById("img-especiales-4").style = "w3-center";
+      }
+    </script>
+  </body>
+</html>
